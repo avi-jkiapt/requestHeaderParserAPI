@@ -1,0 +1,61 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Request Header Parser</title>
+   
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+  </head>
+  <body>
+    <div class="container text-center">
+       <div class="jumbotron "> 
+          <h1 class="text-success">
+            API PROJECT: Request Header Parser Microservice
+         </h1>
+         
+         <div style="margin:40px">
+            <h5 class="text-warning">
+              User Story
+           </h5>
+           <p>
+             I can get the IP address, preferred languages (from header Accept-Language)
+and system infos (from header User-Agent) for my device.
+           </p>
+         </div>
+         <div style="margin:40px">
+           <h5 class="text-danger">
+             Example Usage
+           </h5>
+           <p>
+             <a href="https://slender-cowbell.glitch.me/api/checkIP" target="_blank">[base url]/api/checkIP</a>
+           </p>
+           
+         </div>
+         <div style="margin:40px">
+           <h5 class="text-info">
+             Example Output
+           </h5>
+           <p>
+             {"ipaddress":"127.0.0.1","language":"en-US,en;q=0.9","software":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36"}
+           </p>
+         </div>
+         <footer class="text-success">Made By: <a href="https://avi-jkiapt.github.io/avi/" target="_blank" >Avinash</a></footer>
+      </div>
+    </div>
+    
+  </body>
+</html>
